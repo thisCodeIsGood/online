@@ -1,0 +1,160 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    opacity: .9;
+    background-image: url('hero-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar ul {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: sticky;
+    top: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0px 10px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 1.5rem;
+}
+
+.hero-container {
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    line-height: 81px;
+
+}
+
+
+.hero-title {
+    font-size: 5.5rem;
+    transition: all .35s;
+    animation: moveText 9s linear infinite reverse;
+    position: relative;
+}
+
+/* @keyframes moveText {
+    from{
+        left: 0px;
+        }
+        to {
+         right: 0px;   
+        }
+    } */
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+main {
+    background: rgb(222, 216, 216);
+}
+
+.carousel-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    width: 100%;
+    height: 50%;
+    border-style: ridge;
+
+}
+
+.carousel-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: moveShape 8s infinite linear;
+    position: absolute;
+    top: 230px;
+}
+
+@keyframes moveShape {
+    0% {
+        left: 0%;
+    }
+    
+    25% {
+        left: 50%;
+    }
+    50% {
+        right: 0%;
+    }
+    75% {
+        right: 50%;
+    }
+    100% {
+        left: 0%;
+    }
+
+}
+
+footer {
+    width: 100%;
+    height: 30vh;
+
+    opacity: .9;
+    background-image: url('hero-img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-container {
+    width: 80%;
+    position: sticky;
+    bottom: 0;
+    font-size: 30px;
+    color: white;
+}
+
+.footer-container p {
+    padding: 5px 5px;
+    text-align: center;
+}
